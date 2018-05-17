@@ -8,7 +8,7 @@
 - [ ] Bomb field drawing (Wilson Mak – @DasNinjaWX)
   - [ ] User interaction
   - [ ] Make appropriate API calls
-- [ ] GUI (Unassigned, please contact)
+- [ ] GUI (Connor Russo - @VinnyTheChin)
   - [ ] Main menu
   - [ ] Score display
   - [ ] Restart button (smiley face)
