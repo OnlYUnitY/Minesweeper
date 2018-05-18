@@ -1,8 +1,9 @@
+final String ScoreManageFilePath = "scores.json";
+
 class ScoreManager {
   ArrayList<Score> scores; //Array of score sets
-  Coder aCoder;
   ScoreManager() { 
-    aCoder = new Coder("scores.JSON"); //Get file name 
+    Coder aCoder = new Coder(ScoreManageFilePath); //Get file name 
     scores = aCoder.decodeArrayForKey("Score"); //Decode Data from JSON file to array
   }
 
@@ -18,12 +19,14 @@ class ScoreManager {
       }
       scores.set(i + 1, comp);
     }
+    Coder aCoder = new Coder(ScoreManageFilePath);
     aCoder.encodeArrayForKey(scores, "Score"); //Encode data for JSON file
-    aCoder.writeToFilePath("scores.JSON"); //Write to JSON file
+    aCoder.writeToFilePath(ScoreManageFilePath); //Write to JSON file
   }
 
   void addScore(Score score) {
     scores.add(score);
+    sortData();
   }
 
   ArrayList getScores() {
