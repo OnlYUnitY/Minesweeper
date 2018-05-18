@@ -3,8 +3,8 @@
 - [ ] Grid logic for bomb locations and point values (David Moore – @DaveAMoore)
   - [ ] Create `Block` object to store pertinent information
   - [ ] Use 2D arrays to maintain matrix-like `Block` collection
-- [ ] Scoring system (Wilson Mak – @DasNinjaWX)
-  - [ ] High score storage (disk read & write)
+- [x] Scoring system (Wilson Mak – @DasNinjaWX)
+  - [x] High score storage (disk read & write)
 - [ ] Bomb field drawing (Wilson Mak – @DasNinjaWX)
   - [ ] User interaction
   - [ ] Make appropriate API calls
